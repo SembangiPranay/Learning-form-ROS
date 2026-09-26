@@ -1,0 +1,5 @@
+1. Why 'colcon build' & 'source install/setup.bash' ?
+ans:- In a ROS 2 workspace, colcon build is used to compile/build the packages present inside the src folder and generate the required files in the build, install, and log folders. 
+After building, source install/setup.bash is used to load the newly built workspace into the current terminal environment so that ROS 2 can find and run the packages and nodes created in that workspace. 
+Thus, the usual workflow is write/create package → colcon build → source install/setup.bash → run the node.
+
